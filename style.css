@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: inline-block;
+    padding: 10px;
+    color: #333;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: Yatra One;
+    font-size: 30px;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    color: #120f0f;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: inline;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 290px;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    display: inline-block;
+    transition: 0.3s;
+    font-family: Phudu;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    
+}
+
+.nav-links a:hover {
+    background-color: #ddd;
+    color: #555;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.profil {
+    width: 100%;
+    max-width: 1750px;
+    max-height: 450px;
+    text-align: center;
+    align-items: center;
+    background: #fff;
+    color: #333;
+    animation: fade-in 1s;
+    margin-bottom: 5px;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/asset/ban.png');
+    animation: banner-gradient 10s infinite alternate;
+}
+
+@keyframes banner-gradient {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+.pic {
+    position: absolute;
+    width: 200px;
+    height: 188px;
+    border-radius: 9999px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 10%;
+    margin-top: 190px;
+}
+
+.name{
+    position: absolute;
+    text-align: center;
+    font-family: cormorant;
+    font-size: 36px;
+    top: 55%;
+    left: 37%;
+}
+
+.desc{
+    position: absolute;
+    text-align: center;
+    font-family: cormorant;
+    font-size: 28px;
+    top: 64%;
+    left: 41%;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    
+}
+
+.abou{
+    padding-top: 18px;
+    text-align: center;
+    font-family: Yatra One;
+    font-size: 40px;
+}
+
+.isi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.story, .exp {
+    top: 45px;
+    padding: 20px;
+    max-width: 350px;
+}
+
+.story {
+    float: left;
+    margin-left: 35px;
+}
+
+.story h3, .exp h3{
+    text-align: center;
+    font-family: cormorant;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.story p, .exp p {
+    text-align: center;
+    font-family: phudu;
+    font-size: 17px;
+}
+
+.exp {
+    float: left;
+    margin-right: 55px;
+    transition: transform 0.3s;
+}
+
+#qualification {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.quali{
+    text-align: center;
+    font-family: Yatra One;
+    font-size: 40px;
+}
+
+.isi-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.education, .skills {
+    padding: 20px;
+    max-width: 350px;
+}
+
+.education{
+    float: left;
+    margin-left: 55px
+}
+
+.education h3, .skills h3{
+    text-align: center;
+    font-family: cormorant;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.education p, .skills p {
+    text-align: center;
+    font-family: phudu;
+    font-size: 17px;
+}
+
+.skills {
+    width: 300;
+    float: left;
+    margin-right: 75px;
+    transition: transform 0.3s;
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.text-center{
+    text-align: center;
+    align-items: center;
+}
+
+.footer h3{
+    font-size: 28px;
+    color: #303030;
+    font-family: Yatra One;
+}
+
+.footer p {
+    font-size: 22px;
+    font-family: cormorant;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 32px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    position: absolute;
+    font-size: 32px;
+}
+
+.fa-instagram {
+    background:#dd2a7bee; ;
+    color: white;
+}
