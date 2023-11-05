@@ -1,3 +1,21 @@
+let i = 0;
+const totalWaktu = 1500; 
+const nama = document.querySelector('.name').textContent;
+const waktuPerKarakter = totalWaktu / nama.length; 
+
+function typingAnimation() {
+    if (i < nama.length) {
+        document.querySelector('.name').innerHTML += nama.charAt(i);
+        i++;
+        setTimeout(typingAnimation, waktuPerKarakter);
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.name').innerHTML = '';
+    typingAnimation();
+});
+
 document.querySelector('.logo').addEventListener('mouseover', function() {
     this.style.transform = 'scale(1.1)';
 });
@@ -24,5 +42,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     story.addEventListener('mouseout', function() {
         contact.style.transform = 'translateX(0)';
+    });
+});
+
+window.addEventListener('scroll', function() {
+    const elements = document.querySelectorAll('.story, .exp, .education, .skills');
+    elements.forEach((element) => {
+        const position = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        if (position - windowHeight <= 0) {
+            element.style.opacity = '1';
+            element.style.transform = 'translateY(0)';
+        }
     });
 });
